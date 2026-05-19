@@ -9,7 +9,7 @@ const flavors = [
   },
   {
     active: true,
-    emoji: "🍫",
+    emoji: "🍯",
     name: "Daim",
     desc: "Karamell och mjölkchoklad med knaprigt Daim-kross.",
     allergens: ["Mandel"],
@@ -84,7 +84,7 @@ const flavors = [
     emoji: "🥜",
     name: "Snickers",
     desc: "Jordnötsmör, dulce de leche och mjölkchoklad – precis som din favoritgodis.",
-    allergens: ["Jordnötter", "Mjölkchoklad", "Dulce de leche"],
+    allergens: ["Jordnötter", "Mjölk", "Soja"],
     accent: "card-yellow"
   },
   {

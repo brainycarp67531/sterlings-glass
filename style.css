@@ -148,19 +148,6 @@ main {
   line-height: 1.5;
 }
 
-.flavor-badge {
-  align-self: flex-start;
-  margin-top: 4px;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  background: var(--accent, #f9a8c9);
-  color: #fff;
-  padding: 3px 10px;
-  border-radius: 99px;
-  font-weight: 400;
-}
-
 .allergen-list {
   display: flex;
   flex-wrap: wrap;

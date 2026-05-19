@@ -1,6 +1,6 @@
 const grid = document.getElementById("flavor-grid");
 
-flavors
+if (grid) flavors
   .filter(f => f.active)
   .forEach(f => {
     const allergenHTML = f.allergens.length
