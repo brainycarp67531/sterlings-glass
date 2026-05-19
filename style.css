@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff8f0;
+  font-family: 'Lato', sans-serif;
+  color: #3a2a1a;
+}
+
+/* ── decorative top stripe ── */
+.stripe {
+  height: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    #f9a8c9 0px, #f9a8c9 24px,
+    #fff     24px, #fff     48px,
+    #a8d8ea  48px, #a8d8ea  72px,
+    #fff     72px, #fff     96px,
+    #f9d29e  96px, #f9d29e  120px,
+    #fff     120px, #fff    144px
+  );
+}
+
+/* ── hero header ── */
+header {
+  text-align: center;
+  padding: 60px 24px 40px;
+  position: relative;
+}
+
+header::before,
+header::after {
+  content: '🍦';
+  font-size: 2.2rem;
+  position: absolute;
+  top: 64px;
+}
+header::before { left: clamp(16px, 8%, 120px); }
+header::after  { right: clamp(16px, 8%, 120px); }
+
+.krans {
+  font-size: 0.85rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #c8856a;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  line-height: 1.1;
+  color: #2d1a0e;
+}
+
+h1 em {
+  font-style: italic;
+  color: #c8856a;
+}
+
+.tagline {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #7a5c44;
+}
+
+.divider {
+  margin: 32px auto 0;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f9a8c9, #f9d29e, #a8d8ea, transparent);
+  border: none;
+}
+
+/* ── menu section ── */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.section-label {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #2d1a0e;
+  margin-bottom: 36px;
+}
+
+/* ── flavor grid ── */
+.flavor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* ── individual flavor card ── */
+.flavor-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 4px 18px rgba(58, 42, 26, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.flavor-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: var(--accent, #f9a8c9);
+  border-radius: 20px 20px 0 0;
+}
+
+.flavor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(58, 42, 26, 0.13);
+}
+
+.flavor-emoji {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.flavor-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #2d1a0e;
+}
+
+.flavor-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #7a5c44;
+  line-height: 1.5;
+}
+
+.flavor-badge {
+  align-self: flex-start;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--accent, #f9a8c9);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-weight: 400;
+}
+
+.allergen-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.allergen-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  background: #fef3ec;
+  color: #c8856a;
+  border: 1px solid #f5d0b8;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+
+/* ── accent colour variants ── */
+.card-pink   { --accent: #f9a8c9; }
+.card-peach  { --accent: #f9825a; }
+.card-mint   { --accent: #6ccb9e; }
+.card-sky    { --accent: #62b8e0; }
+.card-yellow { --accent: #f5c842; }
+.card-lilac  { --accent: #b39ddb; }
+
+/* ── footer ── */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.8rem;
+  color: #b09a8a;
+  border-top: 1px solid #eeddd2;
+}
+
+footer span {
+  font-size: 1.1rem;
+}
