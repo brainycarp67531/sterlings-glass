@@ -1,23 +1,39 @@
 const flavors = [
   {
     active: true,
-    emoji: "🍫",
-    name: "Brownies",
+    emoji: "🤎",
+    name: "Brownie",
     desc: "Chokladig browniesmet virvlad med sega browniebitar.",
     allergens: ["Gluten", "Ägg"],
     accent: "card-peach"
   },
   {
     active: true,
-    emoji: "🍯",
+    emoji: "🤎",
+    name: "Chokladboll",
+    desc: "En klassisk chokladboll med smak av choklad, kaffe och kokos.",
+    allergens: ["Kokos"],
+    accent: "card-sky"
+  },
+  {
+    active: true,
+    emoji: "💛",
+    name: "Cookie dough",
+    desc: "En amerikansk favorit med kakdeg.",
+    allergens: ["Gluten", "Soja"],
+    accent: "yellow-sky"
+  },
+  {
+    active: true,
+    emoji: "🤎",
     name: "Daim",
-    desc: "Karamell och mjölkchoklad med knaprigt Daim-kross.",
+    desc: "Knaprig Daim-kross i en svalkande kula.",
     allergens: ["Mandel"],
     accent: "card-sky"
   },
   {
     active: true,
-    emoji: "🥐",
+    emoji: "🧡",
     name: "Kanelbulle",
     desc: "Kanelbullens klassiska smak förvandlad till krämig glass.",
     allergens: ["Gluten"],
@@ -33,7 +49,7 @@ const flavors = [
   },
   {
     active: true,
-    emoji: "🍋",
+    emoji: "💛",
     name: "Lemon Curd",
     desc: "Syrlig och frisk citronglass med hemgjord lemon curd.",
     allergens: ["Ägg", "Citron"],
@@ -41,15 +57,15 @@ const flavors = [
   },
   {
     active: true,
-    emoji: "🌰",
+    emoji: "🤎",
     name: "Nutella",
-    desc: "Len glass med generösa swirls av krämig Nutella.",
+    desc: "Len glass av krämig Nutella.",
     allergens: ["Hasselnötter"],
     accent: "card-mint"
   },
   {
     active: true,
-    emoji: "🍪",
+    emoji: "🖤",
     name: "Oreo",
     desc: "Krämig glass full med krossade Oreo-kakor.",
     allergens: ["Gluten"],
@@ -57,39 +73,39 @@ const flavors = [
   },
   {
     active: true,
-    emoji: "🍭",
+    emoji: "🩷",
     name: "Polka",
-    desc: "Pepparmintsglass med krossade polkagrisar.",
+    desc: "Fräsh glass med krossade polkagrisar.",
     allergens: [],
     accent: "card-pink"
   },
   {
     active: true,
-    emoji: "🍮",
+    emoji: "🧡",
     name: "Salt Karamell",
-    desc: "Söt och mjölkig argentinsk karamellglass.",
+    desc: "Söt och mjölkig salt karamellglass.",
     allergens: [],
     accent: "card-yellow"
   },
   {
     active: true,
-    emoji: "🍞",
+    emoji: "🤍",
     name: "Semla",
-    desc: "Mandelmassa och vispgrädde – semlans smak i varje sked.",
+    desc: "Mandelmassa, kardemumma och vispgrädde – semlans smak i varje sked.",
     allergens: ["Mandel"],
     accent: "card-mint"
   },
   {
     active: true,
-    emoji: "🥜",
+    emoji: "🤎",
     name: "Snickers",
-    desc: "Jordnötsmör, dulce de leche och mjölkchoklad – precis som din favoritgodis.",
+    desc: "Jordnötssmör, dulce de leche, mjölkchoklad och krunchiga jordnötter.",
     allergens: ["Jordnötter", "Mjölk", "Soja"],
     accent: "card-yellow"
   },
   {
     active: true,
-    emoji: "🍦",
+    emoji: "🤍",
     name: "Vanilj",
     desc: "Klassisk, len vaniljglass – en tidlös favorit.",
     allergens: [],
@@ -97,10 +113,10 @@ const flavors = [
   },
   {
     active: true,
-    emoji: "🍬",
+    emoji: "🧡",
     name: "Wienernougat",
-    desc: "Mjuk och söt nougat med rostade mandelbitar.",
-    allergens: ["Mandel"],
+    desc: "Mjuk och söt nougat med mandelflarn.",
+    allergens: ["Mandel", "Hasselnötter"],
     accent: "card-peach"
   }
 ];
